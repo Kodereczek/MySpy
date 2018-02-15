@@ -1,0 +1,22 @@
+CREATE TABLE `Users` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`email` TEXT NOT NULL ,
+`emailCrc32` TEXT NOT NULL ,
+`password` TEXT NOT NULL ,
+`registered` TEXT NOT NULL ,
+`ip` TEXT NOT NULL ,
+`paid` TEXT NOT NULL ,
+`devices` TEXT NOT NULL ,
+PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `Devices` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`name` TEXT NOT NULL ,
+`nameCrc32` TEXT NOT NULL ,
+`owner` TEXT NOT NULL ,
+`delete` INT NOT NULL ,
+`update` INT NOT NULL ,
+`reset` INT NOT NULL ,
+PRIMARY KEY (`id`)
+);

@@ -26,7 +26,7 @@ int C_Command::CheckCommand()
 	random = hashMD5->Random();
 
 	bufferStringStream.str("");
-	bufferStringStream << "device=" << objBase->nsdUsersUserDevice << "&random=" << random << "&code=" << hashMD5->Hash(random + "key", MD5);
+	bufferStringStream << "device=" << objBase->nsdUsersUserDevice << "&random=" << random << "&code=" << hashMD5->Hash(random + "has³o", MD5);
 
 	curl->Request(objBase->psfApiCheckCommandPhp, bufferStringStream.str());
 

@@ -41,7 +41,7 @@ C_Base::C_Base()
 	pcfUpdateExe = pathTemp + ncfUpdateExe;
 
 	// Server
-	server = "http://www.myspy..com/Server";
+	server = "http://www.nazwa.com/Server";
 
 	nsdApi   = "Api";
 	nsdUsers = "Users";

